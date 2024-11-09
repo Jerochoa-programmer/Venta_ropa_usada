@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/384e8025d3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/Logo_Ecopeques-removebg-preview.png">
+    <title>Ecopeques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+        <img src="images/Logo_Ecopeques-removebg-preview.png" class="logo_imagen">
+        <img src="images/logo_letras1.png" class="logo_letras">
+        </div>
+        <form class="busqueda ">
+            <select id="tipo_prenda" name="tipo_prenda" onchange="redirigir()">
+                <option value="#">Busqueda</option>
+                <option value="index.html">Todos</option>
+                <option value="niño.html">Niño</option>
+                <option value="niña.html">Niña</option>
+            </select>
+        </form>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="index.html" id="botones">Inicio</a>
+            <a href="ingresar.html"class="boton-contacto">Ingresar</a>
+            <a href="ingresar.html"class="boton-contacto">Dale tu estilo</a>
+            <a class="cart-button">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <label for="check" class = "esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section id="categorias">
+        <div class="botones_categorias">
+            <a href="#" class="boton-form">Ropa</a>
+            <a href="#" class="boton-form">Accesorios</a>
+            <a href="#" class="boton-form">Zapatos</a>
+        </div>
+    </section>
+    <section id="venta">
+        <div>
+            <img src="" alt="Imagen de la prenda">
+        </div>
+        <div class="datos">
+            <h4>Nombre del Producto</h4>
+            <p>Talla y Dueño</p>
+            <a href="#" class="boton-articulo2">Precio</a>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+<footer>
+</footer>
+</html>

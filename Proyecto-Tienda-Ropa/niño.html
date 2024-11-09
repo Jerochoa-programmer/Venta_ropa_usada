@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/384e8025d3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/Logo_Ecopeques-removebg-preview.png">
+    <title>Ecopeques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+        <img src="images/logo.png" class="logo_imagen">
+        <img src="images/logo_letras1.png" class="logo_letras">
+        </div>
+        <form class="busqueda ">
+            <select id="tipo_prenda" name="tipo_prenda" onchange="redirigir()">
+                <option value="#">Busqueda</option>
+                <option value="index.html">Todos</option>
+                <option value="niño.html">Niño</option>
+                <option value="niña.html">Niña</option>
+            </select>
+        </form>
+        <script src="script.js"></script>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="index.html" id="botones">Inicio</a>
+            <a href="ingresar.html"class="boton-contacto">Ingresar</a>
+            <a href="ingresar.html"class="boton-contacto">Dale tu estilo</a>
+            <a class="cart-button">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <label for="check" class = "esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section id="categorias">
+        <div class="botones_categorias">
+            <a href="index.html" class="boton-form">Ropa</a>
+            <a href="accesorios.html" class="boton-form">Accesorios</a>
+            <a href="zapatosniño.html" class="boton-form">Zapatos</a>
+        </div>
+    </section>
+    <section id="articulos">
+        <a href="venta.html?img=articulos/5.jpeg&nombre=Camiseta Rick y Morty&talla=12&dueño=Camila D&precio=17000" class="articulo1">
+        <div>
+            <img src="./articulos/5.jpeg">
+            <h4>Camiseta Rick y Morty</h4>
+            <p>Talla 12 - Camila D</p>
+            <a href="venta.html?img=articulos/5.jpeg&nombre=Camiseta Rick y Morty&talla=12&dueño=Camila D&precio=17000" class="boton-articulo5">$17.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/3.png&nombre=Sudadera Adidas&talla=10&dueño=Dahyana M&precio=25000" class="articulo2">        
+        <div>
+            <img src="./articulos/3.png">
+            <h4>Sudadera Adidas</h4>
+            <p>Talla 10 - Dahyana M</p>
+            <a href="venta.html?img=articulos/3.png&nombre=Sudadera Adidas&talla=10&dueño=Dahyana M&precio=25000" class="boton-articulo3">$25.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/8.png&nombre=Camisa Tommy Hilfiger&talla=6&dueño=Julian Y&precio=28000" class="articulo3">
+        <div>
+            <img src="./articulos/8.png">
+            <h4>Camisa Tommy Hilfiger</h4>
+            <p>Talla 6 - Julian Y</p>
+            <a href="venta.html?img=articulos/8.png&nombre=Camisa Tommy Hilfiger&talla=6&dueño=Julian Y&precio=28000" class="boton-articulo8">$28.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/10.jpeg&nombre=Mameluco niño&talla=3/6 Meses&dueño=Jairo R&precio=20000" class="articulo4">
+        <div>
+            <img src="./articulos/10.jpeg">
+            <h4>Mameluco niño</h4>
+            <p>3/6 Meses - Jairo R</p>
+            <a href="venta.html?img=articulos/10.jpeg&nombre=Mameluco niño&talla=3/6 Meses&dueño=Jairo R&precio=20000" class="boton-articulo6">$20.000</a>
+        </div>
+        </a>
+    </section>
+    <section id="articulos5">
+        <a href="venta.html?img=articulos/11.png&nombre=Traje Bautizo&talla=12/18 meses&dueño=Andres G&precio=55000" class="articulo5">
+        <div>
+            <img src="./articulos/11.png">
+            <h4>Traje Bautizo</h4>
+            <p>12/18 meses - Andres G</p>
+            <a href="venta.html?img=articulos/11.png&nombre=Traje Bautizo&talla=12/18 meses&dueño=Andres G&precio=55000" class="boton-articulo7">$55.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/17.png&nombre=Overol Offcorss&talla=8&dueño=Juanito&precio=40000" class="articulo6">        
+        <div>
+            <img src="./articulos/17.png">
+            <h4>Overol Offcorss</h4>
+            <p>Talla 8 - Juanito</p>
+            <a href="venta.html?img=articulos/17.png&nombre=Overol Offcorss&talla=8&dueño=Juanito&precio=40000" class="boton-articulo5">$40.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/18.jpg&nombre=Chaqueta Offcorss&talla=14&dueño=Mariana O&precio=50000" class="articulo7">
+        <div>
+            <img src="./articulos/18.jpg">
+            <h4>Chaqueta Offcorss</h4>
+            <p>Talla 14 - Mariana O</p>
+            <a href="venta.html?img=articulos/18.jpg&nombre=Chaqueta Offcorss&talla=14&dueño=Mariana O&precio=50000" class="boton-articulo6">$50.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/19.jpg&nombre=Chaqueta niño&talla=12&dueño=Jimena V&precio=33000" class="articulo8">
+        <div>
+            <img src="./articulos/19.jpg">
+            <h4>Chaqueta niño</h4>
+            <p>Talla 12 - Jimena V</p>
+            <a href="venta.html?img=articulos/19.jpg&nombre=Chaqueta niño&talla=12&dueño=Jimena V&precio=33000" class="boton-articulo7">$33.000</a>
+        </div>
+        </a>
+    </section>
+</body>
+<footer>
+</footer>
+</html>

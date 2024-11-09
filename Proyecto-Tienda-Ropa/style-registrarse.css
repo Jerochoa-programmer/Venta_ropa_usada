@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    height: 100px;
+    background-color:rgb(201, 104, 104);
+    padding: 0 50px;
+    color: rgb(245, 230, 194);
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a{
+    font-size: 18px;
+    padding:7px 20px;
+    color:rgb(245, 230, 194);
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    text-decoration: none;
+    background: none;
+    transition-duration: 4s;
+}
+.menu a:hover {
+    color:rgb(245, 230, 194);
+  }
+  
+  .menu a:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .menu a:after {
+    content: "";
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color:rgb(245, 230, 194);
+    transition-duration: 0.4s;
+    transition-property: width, left;
+  }
+.logo{
+    color: rgb(245, 230, 194);
+    font-weight: 900;   
+}
+.mostrar-menu, .esconder-menu{
+    font-size: 30px;
+    cursor:pointer;
+    display: none;
+    transition: 0.4s;
+}
+.mostrar-menu{
+    order: 1;
+}
+#check{
+    display:none;
+}
+
+@media(max-width:768px){
+    .mostrar-menu, .esconder-menu{
+        display:block;
+    }
+    .menu{
+        position: fixed;
+        width:100%;
+        height:100vh;
+        background:rgb(201, 104, 104);
+        /*left:0;*/
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding:100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display:block;
+        padding: 10px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    .datos-form{
+        flex-direction: column;
+    }
+}
+#registrarse{
+    background-color: rgb(245, 230, 194);
+    padding: 50px 0px;
+    color:rgb(159, 83, 83);
+    height: 90vh;
+}
+#registrarse h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#registrarse h4{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#registrarse form{
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+
+.datos-form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid rgb(230,157,157);
+    padding: 10px 5px;
+    outline: 0;
+    color: rgb(159, 83, 83);
+    width: 60%; 
+}
+
+form input:focus{
+    border-color:white;
+    box-shadow: 0 2px 0 2px rgb(230,157,157);
+}
+
+form input::placeholder{
+    color:rgb(228, 169, 169);
+    text-align: center;
+}
+.boton-formulario .boton-form{
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: rgb(201, 104, 104);
+    color: rgb(245, 230, 194);
+    border: 3px solid rgb(201, 104, 104);
+    border-radius: 30px;
+    padding: 7px 30px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-left: 17%;
+    width: 60%;
+    text-align: center;
+}
+.boton-formulario:hover .boton-form:hover{
+    background: rgb(245, 230, 194);
+    color:rgb(201, 104, 104);
+}
+footer{
+    background-color: rgb(245, 230, 194);
+    text-align: center;
+    color:rgb(159, 83, 83);
+}

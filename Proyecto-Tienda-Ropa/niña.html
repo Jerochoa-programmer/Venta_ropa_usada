@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/384e8025d3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/Logo_Ecopeques-removebg-preview.png">
+    <title>Ecopeques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+        <img src="images/Logo_Ecopeques-removebg-preview.png" class="logo_imagen">
+        <img src="images/logo_letras1.png" class="logo_letras">
+        </div>
+        <form class="busqueda ">
+            <select id="tipo_prenda" name="tipo_prenda" onchange="redirigir()">
+                <option value="#">Busqueda</option>
+                <option value="index.html">Todos</option>
+                <option value="niño.html">Niño</option>
+                <option value="niña.html">Niña</option>
+            </select>
+        </form>
+        <script src="script.js"></script>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="index.html" id="botones">Inicio</a>
+            <a href="ingresar.html"class="boton-contacto">Ingresar</a>
+            <a href="ingresar.html"class="boton-contacto">Dale tu estilo</a>
+            <a class="cart-button">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <label for="check" class = "esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section id="categorias">
+        <div class="botones_categorias">
+            <a href="niña.html" class="boton-form">Ropa</a>
+            <a href="accesorios.html" class="boton-form">Accesorios</a>
+            <a href="zapatosniña.html" class="boton-form">Zapatos</a>
+        </div>
+    </section>
+    <section id="articulos">
+        <a href="venta.html?img=articulos/1.jpeg&nombre=Buzo de lana niña&talla=8&dueño=Alejandra G&precio=35000" class="articulo1">
+        <div>
+            <img src="./articulos/1.jpeg">
+            <h4>Buzo de lana niña</h4>
+            <p>Talla 8 - Alejandra G</p>
+            <a href="venta.html?img=articulos/1.jpeg&nombre=Buzo de lana niña&talla=8&dueño=Alejandra G&precio=35000" class="boton-articulo1">$35.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/6.jpeg&nombre=Mamelucos bebé&talla=4/6 meses&dueño=Maria E&precio=35000" class="articulo2">        
+        <div>
+            <img src="./articulos/6.jpeg">
+            <h4>Mamelucos bebé</h4>
+            <p>4/6 meses - Maria E</p>
+            <a href="venta.html?img=articulos/6.jpeg&nombre=Mamelucos bebé&talla=4/6 meses&dueño=Maria E&precio=35000" class="boton-articulo6">$35.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/7.jpeg&nombre=Conjunto niña Baby fresh&talla=6/12 meses&dueño=Jero Ochoa&precio=25000" class="articulo3">
+        <div>
+            <img src="./articulos/7.jpeg">
+            <h4>Conjunto niña Baby fresh</h4>
+            <p>6/12 meses - Jero Ochoa</p>
+            <a href="venta.html?img=articulos/7.jpeg&nombre=Conjunto niña Baby fresh&talla=6/12 meses&dueño=Jero Ochoa&precio=25000" class="boton-articulo7">$25.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/15.png&nombre=Vestido niña&talla=10&dueño=Juan A&precio=26000" class="articulo4">
+        <div>
+            <img src="./articulos/15.png">
+            <h4>Vestido niña</h4>
+            <p>Talla 10 - Juan A</p>
+            <a href="venta.html?img=articulos/15.png&nombre=Vestido niña&talla=10&dueño=Juan A&precio=26000" class="boton-articulo7">$26.000</a>
+        </div>
+        </a>
+    </section>
+    <section id="articulos5">
+        <a href="venta.html?img=articulos/20.jpg&nombre=Vestido Flores Azules&talla=12/18 Meses&dueño=Sara M&precio=20000" class="articulo5">
+        <div>
+            <img src="./articulos/20.jpg">
+            <h4>Vestido Flores Azules</h4>
+            <p>12/18 Meses - Sara M</p>
+            <a href="venta.html?img=articulos/20.jpg&nombre=Vestido Flores Azules&talla=12/18 Meses&dueño=Sara M&precio=20000" class="boton-articulo8">$20.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/articulo1.jpg&nombre=Buzo niña&talla=12&dueño=Carolina P&precio=24000" class="articulo6">        
+        <div>
+            <img src="./articulos/articulo1.jpg">
+            <h4>Buzo niña</h4>
+            <p>Talla 12 - Carolina P</p>
+            <a href="venta.html?img=articulos/articulo1.jpg&nombre=Buzo niña&talla=12&dueño=Carolina P&precio=24000" class="boton-articulo8">$24.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/21.jpg&nombre=Falda Bubble Gummers&talla=12&dueño=Santiago M&precio=36000" class="articulo7">
+        <div>
+            <img src="./articulos/21.jpg">
+            <h4>Falda Bubble Gummers</h4>
+            <p>Talla 12 - Santiago M</p>
+            <a href="venta.html?img=articulos/21.jpg&nombre=Falda Bubble Gummers&talla=12&dueño=Santiago M&precio=36000" class="boton-articulo5">$36.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/22.jpg&nombre=Vestido compuesto&talla=18/24 Meses&dueño=Juan M&precio=35000" class="articulo8">
+        <div>
+            <img src="./articulos/22.jpg">
+            <h4>Vestido compuesto</h4>
+            <p>18/24 Meses - Juan M</p>
+            <a href="venta.html?img=articulos/22.jpg&nombre=Vestido compuesto&talla=18/24 Meses&dueño=Juan M&precio=35000" class="boton-articulo6">$35.000</a>
+        </div>
+        </a>
+    </section>
+</body>
+<footer>
+</footer>
+</html>

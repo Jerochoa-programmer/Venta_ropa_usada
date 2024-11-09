@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/384e8025d3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/Logo_Ecopeques-removebg-preview.png">
+    <title>Ecopeques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+        <img src="images/logo.png" class="logo_imagen">
+        <img src="images/logo_letras1.png" class="logo_letras">
+        </div>
+        <form class="busqueda ">
+            <select id="tipo_prenda" name="tipo_prenda" onchange="redirigir()">
+                <option value="#">Busqueda</option>
+                <option value="index.html">Todos</option>
+                <option value="niño.html">Niño</option>
+                <option value="niña.html">Niña</option>
+            </select>
+        </form>
+        <script src="script.js"></script>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="index.html" id="botones">Inicio</a>
+            <a href="ingresar.html"class="boton-contacto">Ingresar</a>
+            <a href="ingresar.html"class="boton-contacto">Dale tu estilo</a>
+            <a class="cart-button">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <label for="check" class = "esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section id="categorias">
+        <div class="botones_categorias">
+            <a href="index.html" class="boton-form">Ropa</a>
+            <a href="accesorios.html" class="boton-form">Accesorios</a>
+            <a href="#" class="boton-form">Zapatos</a>
+        </div>
+    </section>
+    <section id="articulos">
+        <a href="venta.html?img=articulos/2.jpeg&nombre=Sandalias&talla=22&dueño=Eliana M&precio=30000" class="articulo1">
+        <div>
+            <img src="./articulos/2.jpeg">
+            <h4>Sandalias</h4>
+            <p>Talla 22 - Eliana M</p>
+            <a href="venta.html?img=articulos/2.jpeg&nombre=Sandalias&talla=22&dueño=Eliana M&precio=30000" class="boton-articulo2">$30.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/4.png&nombre=Botas KHOMBU&talla=28&dueño=Sofia S&precio=40000" class="articulo2">        
+        <div>
+            <img src="./articulos/4.png">
+            <h4>Botas KHOMBU</h4>
+            <p>Talla 28 - Sofia S</p>
+            <a href="venta.html?img=articulos/4.png&nombre=Botas KHOMBU&talla=28&dueño=Sofia S&precio=40000" class="boton-articulo4">$40.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/9.png&nombre=Zapatos Nike&talla=34&dueño=Merari M&precio=80000" class="articulo3">
+        <div>
+            <img src="./articulos/9.png">
+            <h4>Zapatos Nike</h4>
+            <p>Talla 34 - Merari M</p>
+            <a href="venta.html?img=articulos/9.png&nombre=Zapatos Nike&talla=34&dueño=Merari M&precio=80000" class="boton-articulo5">$80.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/24.jpg&nombre=Zapatos Zara Kids&talla=30&dueño=Teresita&precio=75000" class="articulo4">
+        <div>
+            <img src="./articulos/24.jpg">
+            <h4>Zapatos Zara Kids</h4>
+            <p>Talla 30 - Teresita</p>
+            <a href="venta.html?img=articulos/24.jpg&nombre=Zapatos Zara Kids&talla=30&dueño=Teresita&precio=75000" class="boton-articulo8">$75.000</a>
+        </div>
+        </a>
+    </section>
+    <section id="articulos5">
+        <a href="venta.html?img=articulos/25.jpg&nombre=Zapatos Niño&talla=24&dueño=Tomas&precio=55000" class="articulo5">
+        <div>
+            <img src="./articulos/25.jpg">
+            <h4>Zapatos Niño</h4>
+            <p>Talla 24 - Tomas</p>
+            <a href="venta.html?img=articulos/25.jpg&nombre=Zapatos Niño&talla=24&dueño=Tomas&precio=55000" class="boton-articulo5">$55.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/26.jpg&nombre=Tenis niña&talla=29&dueño=Dora&precio=43000" class="articulo6">        
+        <div>
+            <img src="./articulos/26.jpg">
+            <h4>Tenis niña</h4>
+            <p>Talla 29 - Dora</p>
+            <a href="venta.html?img=articulos/26.jpg&nombre=Tenis niña&talla=29&dueño=Dora&precio=43000" class="boton-articulo6">$43.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/27.jpg&nombre=Zapatos Princesas Disney&talla=30&dueño=Salomon B&precio=40000" class="articulo7">
+        <div>
+            <img src="./articulos/27.jpg">
+            <h4>Zapatos Princesas Disney</h4>
+            <p>Talla 30 - Salomon B</p>
+            <a href="venta.html?img=articulos/27.jpg&nombre=Zapatos Princesas Disney&talla=30&dueño=Salomon B&precio=40000" class="boton-articulo7">$40.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/28.jpg&nombre=Sandalias Bubble Gummers&talla=22&dueño=Yurleny&precio=40000" class="articulo8">
+        <div>
+            <img src="./articulos/28.jpg">
+            <h4>Sandalias Bubble Gummers</h4>
+            <p>Talla 22 - Yurleny</p>
+            <a href="venta.html?img=articulos/28.jpg&nombre=Sandalias Bubble Gummers&talla=22&dueño=Yurleny&precio=40000" class="boton-articulo8">$40.000</a>
+        </div>
+        </a>
+    </section>
+</body>
+<footer>
+</footer>
+</html>

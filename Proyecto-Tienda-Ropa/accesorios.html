@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/384e8025d3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/Logo_Ecopeques-removebg-preview.png">
+    <title>Ecopeques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+        <img src="images/Logo_Ecopeques-removebg-preview.png" class="logo_imagen">
+        <img src="images/logo_letras1.png" class="logo_letras">
+        </div>
+        <form class="busqueda ">
+            <select id="tipo_prenda" name="tipo_prenda" onchange="redirigir()">
+                <option value="#">Busqueda</option>
+                <option value="index.html">Todos</option>
+                <option value="niño.html">Niño</option>
+                <option value="niña.html">Niña</option>
+            </select>
+        </form>
+        <script src="script.js"></script>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="index.html" id="botones">Inicio</a>
+            <a href="ingresar.html"class="boton-contacto">Ingresar</a>
+            <a href="ingresar.html"class="boton-contacto">Dale tu estilo</a>
+            <a class="cart-button">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <label for="check" class = "esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section id="categorias">
+        <div class="botones_categorias">
+            <a href="index.html" class="boton-form">Ropa</a>
+            <a href="accesorios.html" class="boton-form">Accesorios</a>
+            <a href="zapatos.html" class="boton-form">Zapatos</a>
+        </div>
+    </section>
+    <section id="articulos5">
+        <a href="venta.html?img=articulos/12.png&nombre=Gorro niña&talla=única&dueño=Yirley G&precio=15000" class="articulo1">
+        <div>
+            <img src="./articulos/12.png">
+            <h4>Gorro niña</h4>
+            <p>Talla única - Yirley G</p>
+            <a href="venta.html?img=articulos/12.png&nombre=Gorro niña&talla=única&dueño=Yirley G&precio=15000" class="boton-articulo8">$15.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/13.png&nombre=Set gorros estampados &talla=única&dueño=Gustavo O&precio=25000" class="articulo2">        
+        <div>
+            <img src="./articulos/13.png">
+            <h4>Set gorros estampados</h4>
+            <p>Talla única - Gustavo O</p>
+            <a href="venta.html?img=articulos/13.png&nombre=Set gorros estampados &talla=única&dueño=Gustavo O&precio=25000" class="boton-articulo5">$25.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/14.jpeg&nombre=Gorra bebé&talla=6/12 meses&dueño=Helen R&precio=15000" class="articulo3">
+        <div>
+            <img src="./articulos/14.jpeg">
+            <h4>Gorra bebé</h4>
+            <p>6/12 meses - Helen R</p>
+            <a href="venta.html?img=articulos/14.jpeg&nombre=Gorra bebé&talla=6/12 meses&dueño=Helen R&precio=15000" class="boton-articulo6">$15.000</a>
+        </div>
+        </a>
+        <a href="venta.html?img=articulos/23.jpg&nombre=Guantes Impermeables&talla=Única&dueño=Lorena T&precio=22000" class="articulo4">
+        <div>
+            <img src="./articulos/23.jpg">
+            <h4>Guantes Impermeables</h4>
+            <p>Talla Única - Lorena T</p>
+            <a href="venta.html?img=articulos/23.jpg&nombre=Guantes Impermeables&talla=Única&dueño=Lorena T&precio=22000" class="boton-articulo7">$22.000</a>
+        </div>
+        </a>
+    </section>
+    
+</body>
+<footer>
+</footer>
+</html>
